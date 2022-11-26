@@ -17,9 +17,9 @@ class App
   def select_section(section)
     case section
     when '1'
-      books
+      books_list
     when '2'
-      people
+      people_list
     when '3'
       create_person
     when '4'
@@ -33,7 +33,7 @@ class App
     end
   end
 
-  def books
+  def books_list
     @books.each do |book|
       book.instance_variables.each do |var|
         string = ''
@@ -46,7 +46,7 @@ class App
     end
   end
 
-  def people
+  def people_list
     @people.each do |person|
       person.instance_variables.each do |var|
         string = ''
