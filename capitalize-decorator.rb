@@ -10,4 +10,3 @@ class CalitalizeDecorator < BaseDecorator
     super.capitalize
   end
 end
-
