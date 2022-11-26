@@ -1,6 +1,6 @@
-require_relative 'base-decorator'
+require_relative 'base_decorator'
 require_relative 'person'
-require_relative 'capitalize-decorator'
+require_relative 'capitalize_decorator'
 
 class TrimmerDecorator < BaseDecorator
   def initialize(nameable)
