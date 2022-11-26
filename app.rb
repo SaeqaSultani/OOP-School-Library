@@ -27,7 +27,7 @@ class App
     when '5'
       create_rental
     when '6'
-      rentals
+      rentals_list
     else
       puts 'Please select a valid section!'
     end
@@ -80,7 +80,7 @@ class App
     name = gets.chomp
     puts 'Has parent permission? [Y/N]'
     parent_permission = gets.chomp.upcase == 'Y'
-    student = Student.new(age, 'Unknown', name, parent_permission)
+    student = Student.new(age, name, parent_permission)
     @people.push(student)
     puts 'You added student successfully'
   end
@@ -147,7 +147,7 @@ class App
     puts 'Rental created successfully'
   end
 
-  def list_rentals
+  def rentals_list
     print 'To see person rentals enter the person ID: '
     id = gets.chomp.to_i
     puts 'Rented Books:'
